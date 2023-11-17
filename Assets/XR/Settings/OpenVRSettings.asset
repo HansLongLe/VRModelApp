@@ -15,9 +15,9 @@ MonoBehaviour:
   PromptToUpgradePackage: 1
   PromptToUpgradePreviewPackages: 1
   SkipPromptForVersion: 
-  StereoRenderingMode: 1
+  StereoRenderingMode: 0
   InitializationType: 1
-  EditorAppKey: application.generated.unity.vrmodelapp.294411808.exe
-  ActionManifestFileRelativeFilePath: 
+  EditorAppKey: application.generated.unity.vrmodelapp.exe
+  ActionManifestFileRelativeFilePath: D:/OneDrive/Documents/Github/VRModelApp/Assets/StreamingAssets\SteamVR\actions.json
   MirrorView: 2
   HasCopiedDefaults: 0
