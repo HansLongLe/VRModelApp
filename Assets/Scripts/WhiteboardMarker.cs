@@ -36,8 +36,6 @@ public class WhiteboardMarker : MonoBehaviour
       {
          if (touch.transform.CompareTag("Whiteboard"))
          {
-            if (touch.transform.CompareTag("Whiteboard"))
-            {
                if (Whiteboard == null)
                {
                   Whiteboard = touch.transform.GetComponent<Whiteboard>();
@@ -54,7 +52,7 @@ public class WhiteboardMarker : MonoBehaviour
                {
                   Whiteboard.texture.SetPixels(x, y, penSize, penSize, colors);
 
-                  for (float f = 0.01f; f < 1.00f; f+= 0.03f)
+                  for (float f = 0.01f; f < 1.00f; f+= 0.01f)
                   {
                      var lerpX = (int)Mathf.Lerp(lastTouchPos.x, x, f);
                      var lerpY = (int)Mathf.Lerp(lastTouchPos.y, y, f);
@@ -70,11 +68,10 @@ public class WhiteboardMarker : MonoBehaviour
                lastTouchRot = transform.rotation;
                touchedLastFrame = true;
                return;
-            }
          }
-
-         Whiteboard = null;
-         touchedLastFrame = false;
       }
+      
+      Whiteboard = null;
+      touchedLastFrame = false;
    }
 }
