@@ -301,7 +301,7 @@ public class UwcWindowTexture : MonoBehaviour
         if (float.IsNaN(scale.x)) scale.x = 0f;
         if (float.IsNaN(scale.y)) scale.y = 0f;
 
-        transform.localScale = scale;
+        // transform.localScale = scale;
     }
 
     void UpdateTitle()
